@@ -32,7 +32,8 @@
 ------------
 
 ### Thanks.
-A more than special thanks to [***Stuart Naylor***](https://forum.radxa.com/u/stuartiannaylor/summary), who, ever so kindly, provided us the Rock Pi 5 for free.
+A more than special thanks to [***Stuart Naylor***](https://forum.radxa.com/u/stuartiannaylor/summary), who, ever so kindly, provided us with the Rock Pi 5 for free.<br>
+And [***Joshua Riek***](https://github.com/Joshua-Riek) for all the hard work on the Ubuntu OS.
 
 ------------
 
