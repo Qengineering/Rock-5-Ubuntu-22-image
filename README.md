@@ -15,6 +15,44 @@
 
 ------------
 
+## Model performance benchmark(FPS)
+
+All models, with C++ examples can be found on the SD image.<br>
+
+| demo             | model_name                   | inputs_shape            | dtype | Rock 5        |
+| ---------------- | ---------------------------- | ----------------------- | ----- | ------------- |
+| yolov5           | yolov5s_relu                 | [1, 3, 640, 640]        | INT8  | 50.0          |
+|                  | yolov5n                      | [1, 3, 640, 640]        | INT8  | 58.8          |
+|                  | yolov5s                      | [1, 3, 640, 640]        | INT8  | 37.7          |
+|                  | yolov5m                      | [1, 3, 640, 640]        | INT8  | 16.2          |
+| yolov6           | yolov6n                      | [1, 3, 640, 640]        | INT8  | 63.0          |
+|                  | yolov6s                      | [1, 3, 640, 640]        | INT8  | 29.5          |
+|                  | yolov6m                      | [1, 3, 640, 640]        | INT8  | 15.4          |
+| yolov7           | yolov7-tiny                  | [1, 3, 640, 640]        | INT8  | 53.4          |
+|                  | yolov7                       | [1, 3, 640, 640]        | INT8  | 9.4           |
+| yolov8           | yolov8n                      | [1, 3, 640, 640]        | INT8  | 53.1          |
+|                  | yolov8s                      | [1, 3, 640, 640]        | INT8  | 28.5          |
+|                  | yolov8m                      | [1, 3, 640, 640]        | INT8  | 12.1          |
+| yolox            | yolox_s                      | [1, 3, 640, 640]        | INT8  | 30.0          |
+|                  | yolox_m                      | [1, 3, 640, 640]        | INT8  | 12.9          |
+| ppyoloe          | ppyoloe_s                    | [1, 3, 640, 640]        | INT8  | 28.8          |
+|                  | ppyoloe_m                    | [1, 3, 640, 640]        | INT8  | 13.1          |
+| yolov5_seg       | yolov5n-seg                  | [1, 3, 640, 640]        | INT8  | 9.4           |
+|                  | yolov5s-seg                  | [1, 3, 640, 640]        | INT8  | 7.8           |
+|                  | yolov5m-seg                  | [1, 3, 640, 640]        | INT8  | 6.1           |
+| yolov8_seg       | yolov8n-seg                  | [1, 3, 640, 640]        | INT8  | 8.9           |
+|                  | yolov8s-seg                  | [1, 3, 640, 640]        | INT8  | 7.3           |
+|                  | yolov8m-seg                  | [1, 3, 640, 640]        | INT8  | 4.5           |
+| ppseg	           | ppseg_lite_1024x512          |	[1, 3, 512, 512]	      | INT8	| 27.5          |
+| RetinaFace       | RetinaFace_mobile320         | [1, 3, 320, 320]        | INT8  | 243.6         |
+|                  | RetinaFace_resnet50_320      | [1, 3, 320, 320]        | INT8  | 43.4          |
+| PPOCR-Det        | ppocrv4_det                  | [1, 3, 480, 480]        | INT8  | 31.5          |
+| PPOCR-Rec        | ppocrv4_rec                  | [1, 3, 48, 320]         | FP16  | 35.7          |
+
+* Due to the pixelwise filling and drawing, segmentation models are relative slow
+
+------------
+
 ## Tips.
 
 * If you are in need of extra space, you can delete the opencv and the opencv_contrib folder from the SD card. There are no longer needed since all libraries are placed in the /usr/ directory.
