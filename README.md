@@ -49,23 +49,25 @@ All models, with C++ examples can be found on the SD image.<br>
 | PPOCR-Det        | ppocrv4_det                  | [1, 3, 480, 480]        | INT8  | 31.5          |
 | PPOCR-Rec        | ppocrv4_rec                  | [1, 3, 48, 320]         | FP16  | 35.7          |
 
-* Due to the pixelwise filling and drawing, segmentation models are relative slow
+* Due to the pixel-wise filling and drawing, segmentation models are relatively slow
 
 ------------
 
 ## Tips.
 
-* If you are in need of extra space, you can delete the opencv and the opencv_contrib folder from the SD card. There are no longer needed since all libraries are placed in the /usr/ directory.
-* Use a tool like [GParted](https://gparted.org/) `sudo apt-get install gparted` to expand the image to larger SD cards. We recommend a minimum of 64 GB. Deep learning simply requires a lot of space.<br/>
-* **An example of YoloV5 running on the NPU (40 FPS) is included.**
+* If you need extra space delete the opencv and the opencv_contrib folder from the SD card. They are no longer needed since all libraries are stored in the /usr/ directory.
+* Use a tool like [GParted](https://gparted.org/) `sudo apt-get install gparted` to expand the image to larger SD cards. We recommend a minimum of 64 GB. Deep learning requires a lot of space.<br/>
 
 ------------
 
 ## Pre-installed frameworks.
 
 - [OpenCV](https://qengineering.eu/deep-learning-with-opencv-on-raspberry-pi-4.html) 4.8.0
-- [ncnn](https://qengineering.eu/install-ncnn-on-raspberry-pi-4.html) 20230517
-- NPU software [rknpu2](https://github.com/rockchip-linux/rknpu2) 1.4.0
+- [ncnn](https://qengineering.eu/install-ncnn-on-raspberry-pi-4.html) 20240410
+- NPU [rknpu2](https://github.com/airockchip/rknn-toolkit2/tree/master/rknpu2) 1.5.2
+- NPU [model zoo](https://github.com/airockchip/rknn_model_zoo) 2.0.0
+- NPU [model zoo models](https://github.com/Qengineering/rknn_model_zoo) 2.0.0
+
 
 ------------
 
