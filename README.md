@@ -4,12 +4,12 @@
 
 ------------
 
-## Installation.
+## Installation
 
-- Get a 16 GB (minimal) SD card holding the image. 
-- Download the `Rock5_Ubuntu22.img.xz` image (3.6 GByte) from our [Sync](https://ln5.sync.com/dl/37ffb83a0/czk9kxmj-z886httr-j45rsyip-rsix4cen) site. 
+- Get a 16 GB (minimum) SD card holding the image. 
+- Download the `Rock5_Ubuntu22.img.xz` image (3.6 GByte) from our [server](https://storage.qengineering.eu/Rock5_Ubuntu22.img.xz). 
 - Flash the image on the SD card with the [Imager](https://www.raspberrypi.org/software/) or [balenaEtcher](https://www.balena.io/etcher/).
-- Insert the SD card in your Rock 5 and enjoy.
+- Insert the SD card into your Rock 5 and enjoy.
 - Username: ***5ubuntu22***
 - no password 
 
